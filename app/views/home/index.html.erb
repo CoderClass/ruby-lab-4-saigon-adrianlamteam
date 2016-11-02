@@ -2,7 +2,7 @@
 <p>This is a basic chat app</p>
 
 <% @rooms.each do |f| %>
-    <%= f.name %>
+    <%= link_to f.name, room_path(f.id) %>
     </br>
 <% end %>
 
